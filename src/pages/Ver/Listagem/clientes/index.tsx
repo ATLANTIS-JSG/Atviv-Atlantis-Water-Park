@@ -148,7 +148,7 @@ function Clientes() {
                 </td>
               </tr>
               <tr>
-                <td>Teresinha Antunes</td>
+                <td>Silvia Lima</td>
                 <td>574.256.378-11</td>
                 <td>
                   <button className="cps" onClick={() => verCliente('3')}>

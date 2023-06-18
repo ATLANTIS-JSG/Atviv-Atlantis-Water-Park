@@ -34,7 +34,7 @@ export default function EditarDependentes() {
       </header>
       <main>
         <div className='text'>
-          <h1 className='margin-titulo'><strong>Ver e ou editar dependentes</strong></h1>
+          <h1 className='margin-titulo'><strong>Ver/editar dependentes</strong></h1>
         </div>
         <div className="forms">
           <form onSubmit={handleSubmit}>
@@ -43,7 +43,7 @@ export default function EditarDependentes() {
                 <div className="field">
                   <label>Nome Completo:</label>
                   <input
-                    placeholder='Insira o nome completo'
+                    placeholder='Insira o nome completo do dependente'
                     type="text"
                     value={dependente.nome}
                     onChange={(e) => {
@@ -59,7 +59,7 @@ export default function EditarDependentes() {
                   <div className="field esquerda">
                     <label>Nome social:</label>
                     <input
-                      placeholder='Insira o nome social'
+                      placeholder='Insira o nome social do dependente'
                       type="text"
                       value={dependente.nomeSocial}
                       onChange={(e) => {
@@ -71,7 +71,7 @@ export default function EditarDependentes() {
                     />
                   </div>
                   <div className="field direita">
-                    <label>Nascimento:</label>
+                    <label>Data de Nascimento:</label>
                     <input
                       type="date"
                       value={dependente.nascimento}
@@ -90,7 +90,7 @@ export default function EditarDependentes() {
                     <label>CPF:</label>
                     <input
                       type="text"
-                      placeholder='XXX.XXX.XXX-XX'
+                      placeholder='Número do cpf'
                       value={dependente.cpf}
                       onChange={(e) => {
                         const newDependentes = [...dependentes];
@@ -104,7 +104,7 @@ export default function EditarDependentes() {
                     <label>Passaporte:</label>
                     <input
                       type="text"
-                      placeholder='XXX.XXX.XXX-XX'
+                      placeholder='Número do passaporte'
                       value={dependente.passaporte}
                       onChange={(e) => {
                         const newDependentes = [...dependentes];
@@ -120,8 +120,8 @@ export default function EditarDependentes() {
               </div>
             ))}
             <div className="btns">
-                <Button className="add add-green" variant="outline-dark"  type="button" onClick={() => window.location.href = '/ver/cliente'}>Voltar</Button>
-              <Button className="add add-green" variant="outline-dark" type="button" onClick={() => addDependente()}><GrFormAdd color='black' size={23}/> Dependentes</Button>
+              <Button className="add add-green" variant="outline-dark"  type="button" onClick={() => window.location.href = '/ver/cliente'}>Voltar</Button>
+              <Button className="add add-green" variant="outline-dark" type="button" onClick={() => addDependente()}> Adicionar outro dependentes</Button>
               <Button className="add add-green" variant="outline-dark" type='submit'>Cadastrar dependentes</Button>{' '}
             </div>
           </form>

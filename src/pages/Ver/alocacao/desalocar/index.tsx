@@ -1,7 +1,5 @@
 import { Button, Table } from 'react-bootstrap';
 import NavBar_ from '../../../../component/barraNavegacao'
-import React, { useEffect, useState } from "react";
-import Axios from "axios";
 import { IoMdRemoveCircle} from "react-icons/io";
 
 interface Cliente {
@@ -15,8 +13,6 @@ interface Cliente {
 }
 
 function Desalocar() {
-    const [clientesAlocados, setClientesAlocados] = useState<Cliente[]>([]);
-    const [atualizarClientesAlocados, setAtualizarClientesAlocados] = useState(false);
 
     function handleSubmit(clienteId: string) {
     }
@@ -41,8 +37,8 @@ function Desalocar() {
                         </thead>
                         <tbody>
                                 <tr>
-                                    <td>Julia</td>
-                                    <td>123.456.789-00</td>
+                                    <td>Ana Silva</td>
+                                    <td>484.828.968-81</td>
                                     <td>
                                         <Button
                                             className="cps"
@@ -55,8 +51,47 @@ function Desalocar() {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>John</td>
-                                    <td>987.654.321-00</td>
+                                    <td>Flávia Roberta</td>
+                                    <td>134.741.471-03</td>
+                                    <td>
+                                        <Button
+                                            className="cps"
+                                            id="transparente"
+                                            onClick={() => handleSubmit("1")}
+                                        >
+                                            <IoMdRemoveCircle color='red' size={28} />
+                                        </Button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>John Rodrigues</td>
+                                    <td>912.572.351-34</td>
+                                    <td>
+                                        <Button
+                                            className="cps"
+                                            id="transparente"
+                                            onClick={() => handleSubmit("1")}
+                                        >
+                                            <IoMdRemoveCircle color='red' size={28} />
+                                        </Button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Vitória Pereira</td>
+                                    <td>561.253.341-16</td>
+                                    <td>
+                                        <Button
+                                            className="cps"
+                                            id="transparente"
+                                            onClick={() => handleSubmit("1")}
+                                        >
+                                            <IoMdRemoveCircle color='red' size={28} />
+                                        </Button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Silvia Lima</td>
+                                    <td>574.256.378-11</td>
                                     <td>
                                         <Button
                                             className="cps"

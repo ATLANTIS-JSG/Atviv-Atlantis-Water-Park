@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Table, Button } from 'react-bootstrap';
-import axios from 'axios';
 import NavBar_ from '../../../../component/barraNavegacao';
 import '../../Listagem/styles.css';
 import { LuCheck } from "react-icons/lu";
@@ -17,7 +16,7 @@ interface Acomodacao {
   }
 
 function AcomodacaoVazia() {
-    const [acomodacoes, setAcomodacoes] = useState<Acomodacao[]>([]);
+    const [acomodacoes] = useState<Acomodacao[]>([]);
 
   useEffect(() => {
   }, []);

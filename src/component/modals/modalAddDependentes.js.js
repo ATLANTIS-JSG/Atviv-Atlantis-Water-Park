@@ -35,22 +35,22 @@ export default function ModalAddDepenentes({close}){
 
                 <main>
                     <div className='text'>
-                    <h1 className='margin-titulo'><strong>Cadastro de Dependentes</strong></h1>
+                    <h1 className='margin-titulo'><strong>Cadastrar Dependente</strong></h1>
                     </div>
                     <div className="forms">
                     <form onSubmit={handleSubmit}>
                         <div className="field">
                         <label>Nome Completo:</label>
-                        <input placeholder='Insira o nome completo' type="text" onChange={(e) => setNome(e.target.value)} />
+                        <input placeholder='Insira o nome completo do dependente' type="text" onChange={(e) => setNome(e.target.value)} />
                         </div>
 
                         <div className="campo-duplo">
                         <div className="field esquerda">
                             <label>Nome social:</label>
-                            <input placeholder='Insira o nome social' type="text" onChange={(e) => setNomeSocial(e.target.value)} />
+                            <input placeholder='Insira o nome social do dependente' type="text" onChange={(e) => setNomeSocial(e.target.value)} />
                         </div>
                         <div className="field direita">
-                            <label>Nascimento:</label>
+                            <label>Data de Nascimento:</label>
                             <input type="date" onChange={(e) => setData_nasc(e.target.value)} />
                         </div>
                         </div>
@@ -58,11 +58,11 @@ export default function ModalAddDepenentes({close}){
                         <div className="campo-duplo">
                         <div className="field esquerda">
                             <label>CPF:</label>
-                            <input type="text" placeholder='XXX.XXX.XXX-XX' onChange={(e) => setCpf(e.target.value)} />
+                            <input type="text" placeholder='Número do CPF' onChange={(e) => setCpf(e.target.value)} />
                         </div>
                         <div className="field direita">
                             <label>Passaporte:</label>
-                            <input type="text" placeholder='XXX.XXX.XXX-XX' onChange={(e) => setPassaporte(e.target.value)} />
+                            <input type="text" placeholder='Número do passaporte' onChange={(e) => setPassaporte(e.target.value)} />
                         </div>
                         </div>
 

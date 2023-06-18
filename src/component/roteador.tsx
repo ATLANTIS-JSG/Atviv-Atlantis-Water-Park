@@ -7,13 +7,13 @@ import {
 import Home from '../pages/Home';
 // visualizacao
 import Clientes from '../pages/Ver/Listagem/clientes';
-import CadastrarClientes from '../pages/Cadastrar/clientes';
-import Acomodacoes from '../pages/Ver/Listagem/acomodacoes';
+import CadastrarClientes from '../pages/Cadastrar/clienteTitular';
+import Acomodacoes from '../pages/Ver/alocacao/Listagem/acomodacao';
 import VerCliente from '../pages/verEditarCliente/cliente';
-import Alocar from '../pages/Ver/alocacao/alocar';
+import Alocar from '../pages/Ver/alocacao/hospedar';
 import Desalocar from '../pages/Ver/alocacao/desalocar';
-import CadastrarAcomodacoes from '../pages/Cadastrar/acomodacoes';
-import AddDependentes from '../pages/Cadastrar/dependentes';
+import CadastrarAcomodacoes from '../pages/Cadastrar/acomodacao';
+import AddDependentes from '../pages/Cadastrar/clienteDdependente';
 import AcomodacaoVazia from '../pages/Ver/alocacao/acomodacaoVazia';
 import EditarDependentes from '../pages/verEditarCliente/dependente';
 
